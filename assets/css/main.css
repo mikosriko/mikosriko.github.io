@@ -176,8 +176,13 @@ input, select, textarea {
 		}
 
 	strong, b {
-		color: #140941;
+		color: #F7F7FF;
 		font-weight: 600;
+	}
+
+	.content p, .major h1 {
+		color:#140941;
+		text-shadow: 0px 2px 5px black;
 	}
 
 	em, i {
