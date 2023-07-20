@@ -1,0 +1,184 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Drawing To Code - Mikolaj Rutyna</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div class="no-highlight" id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="/" class="logo"><strong>MIKOLAJ</strong> <span>RUTYNA</span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="/">Home</a></li>
+							<li><a href="/aboutme.html">About</a></li>
+							<!-- <li><a href="/projects.html">Projects</a></li> -->
+							<!-- <li><a href="/elements.html">Elements</a></li> -->
+						</ul>
+						<!-- <ul class="actions stacked">
+							<li><a href="#" class="button primary fit">Get Started</a></li>
+							<li><a href="#" class="button fit">Log In</a></li>
+						</ul> -->
+					</nav>
+
+				<!-- Main -->
+					<div id="main" class="alt">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major white">
+										<h1>Drawing To Code (16th January 2023)</h1>
+										<a href="https://github.com/mikosriko/Drawing_to_OF_or_p5JS" target="_blank" rel="noopener noreferrer" class="button icon solid fa-download">GitHub</a>
+									</header>
+									<div class="grid-container-1-3">
+										<div class="text-area"><p>
+                                            This was my project for the C++ for Creative Pratice module.<br>
+                                            I wanted to take what we did with our painting programs and take it
+                                            to the next level where you can convert the drawing into code.
+                                            <br><br>The reason for this idea is mainly due to how drawing shapes is
+                                            implemented in p5.js and OpenFrameworks. You have to create the shape using
+                                            its function while you input values for X and Y positions, height
+                                            and width, colour, etc.
+                                            <br> This can be very annoying as you have to guess where it would land and
+                                            how it would look on the canvas before you run it, which almost never ends 
+                                            up how you like it to. You have to constantly go back to changing the values, 
+                                            running the code again, until it is just right.
+                                            <br><br>Using this program eliminates this issue by allowing you to draw
+                                            anything you would like to implement instantly into your project.
+                                            <br>You have a variety of features to choose from such as:
+                                            <ul>
+                                                <li>Line Tool;</li>
+                                                <li>Rectangle Tool;</li>
+                                                <li>Ellipse Tool;</li>
+                                                <li>Triangle Tool;</li>
+                                                <li>Polygon Tool;</li>
+                                                <li>Add fill to your shape;</li>
+                                                <li>Change width of outline;</li>
+                                                <li>Changing the colour of your shape in RGBA with the colour wheel or slides;</li>
+                                                <li>...and to convert the drawing into OpenFrameworks or p5.js.</li>
+                                            </ul>
+                                            <br>There are variety of issues with this project that I have faced and that
+                                            are currently present that I did not have time to fix.
+                                            <ul><br>
+                                                <li>
+                                                    I had an idea to implement layers where you could access each shape you
+                                                    have drawn in order. However, I did not find the time to implement this, so
+                                                    the user has to be definite about what they draw as they cannot go back.
+                                                </li><br>
+                                                <li>
+                                                    The current output of the code is inefficient as it creates too many pushes
+                                                    and pops for each shape. I tried to minimise this by checking the properties
+                                                    of the previous shape and the current shape drawn - if they match, the
+                                                    shape function will be implemented within the same push and pop. This
+                                                    would have helped to minimise lines of code. I could not implement this
+                                                    at the end due to saving the values of the RGBA caused one of the values
+                                                    to randomly decrease or increase by a little bit. I have no idea why
+                                                    this issue occured, and gave up on it because I already spent too much
+                                                    time on it.
+                                                </li><br>
+                                                <li>
+                                                    Current issue is that it will draw a point, even though the user has
+                                                    clicked on each of the buttons to change tools or change the colours.
+                                                </li>
+                                            </ul>
+                                            <br>Next time, I would like to write a better class that stores the tool's
+                                            parameters, and another that controls all of them. This would allow for an easier
+                                            implementation of new tools next time.
+                                            <br>Currently drawing the shapes right now is weird as you cannot align them together.
+                                            I would like to add a "snap to grid" function to ease drawing for everyone.
+                                        </p>
+                                    </div>
+                                    <div class="image1"><img class="image-main" src="myImages/drawingtocode.png" alt=""/></div>
+                                    <div class="image2"><img class="image-main" src="myImages/drawingtocode1.png" alt=""/></div>
+                                    <div class="image3"><img class="image-main" src="myImages/drawingtocode2.png" alt=""/></div>
+									</div>
+								</div>
+							</section>
+
+					</div>
+
+				<!-- Contact -->
+					<!-- <section id="contact">
+						<div class="inner">
+							<section>
+								<form method="post" action="#">
+									<div class="fields">
+										<div class="field half">
+											<label for="name">Name</label>
+											<input type="text" name="name" id="name" />
+										</div>
+										<div class="field half">
+											<label for="email">Email</label>
+											<input type="text" name="email" id="email" />
+										</div>
+										<div class="field">
+											<label for="message">Message</label>
+											<textarea name="message" id="message" rows="6"></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send Message" class="primary" /></li>
+										<li><input type="reset" value="Clear" /></li>
+									</ul>
+								</form>
+							</section>
+							<section class="split">
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-envelope"></span>
+										<h3>Email</h3>
+										<a href="#">mikolaj.rutyna@gmail.com</a>
+									</div>
+								</section>
+							</section>
+						</div>
+					</section> -->
+
+				<!-- Footer -->
+					<footer class="no-highlight" id="footer">
+						<div class="inner">
+							<ul class="icons">
+								<!-- <li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li> -->
+								<!-- <li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li> -->
+								<li><a href="https://instagram.com/miko_sriko" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+								<li><a href="https://github.com/mikosriko" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								<li><a href="https://linkedin.com/in/mikolaj-rutyna/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+							</ul>
+							<ul class="copyright">
+								<li>&copy; Mikolaj Rutyna</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
